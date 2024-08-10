@@ -11,6 +11,14 @@ Follow these simple steps to get Caphys Food App running on your local machine:
 
 Fork the repository
 Clone it: git clone https://github.com/{Aayussh017}/Caphys-Food-App.git
+
+
+
+
+
+
+
+
 Set up a virtual environment:
 Copyvirtualenv myenv --python=python3.6
 source myenv/bin/activate
