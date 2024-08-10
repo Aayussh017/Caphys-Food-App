@@ -1,0 +1,17 @@
+{% extends 'food/base.html' %}
+
+{% block body %}
+<div class="container mt-4">
+    <div class="row">
+        <div class="col-md-4">
+            <img class="img-fluid" src="{{ object.item_image }}" alt="{{ object.item_name }}">
+        </div>
+        <div class="col-md-8">
+            <h1>{{ object.item_name }}</h1>
+            <h2>{{ object.item_desc }}</h2>
+            <h3>${{ object.item_price }}</h3>
+            <a href="{% url 'food:delete_item' object.id %}">Delete</a>
+        </div>
+    </div>
+</div>
+{% endblock %}
